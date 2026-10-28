@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A searchable sample directory of AI tools for teachers and beginner AI students.">
+  <title>AI Tools Directory for Teachers and Students</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>AI Tools Directory</h1>
+    <p>Find AI tools for teaching and learning, with classroom ideas and honest limitations.</p>
+    <p class="notice"><strong>Sample dataset:</strong> this is a small, hand-written list, not a complete or ranked directory. Features and pricing change often. Pricing is shown only when it has been checked against an official source, with the date. Always confirm details on the tool's official website. Listing a tool is not an endorsement.</p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Search and filter">
+      <div class="search-row">
+        <label for="search" class="visually-hidden">Search tools</label>
+        <input id="search" type="search" placeholder="Search by name, purpose or classroom use" autocomplete="off">
+        <button type="button" id="clear-btn" class="btn">Clear</button>
+      </div>
+      <div id="filters" class="filters" role="group" aria-label="Filter by category"></div>
+      <p id="count" class="count" aria-live="polite"></p>
+    </section>
+
+    <section id="grid" class="grid" aria-label="Tool cards"></section>
+    <p id="empty" class="empty" hidden>No tools match your search. Try different words, or click Clear to see all tools.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Sample data &middot; MIT License &middot; Check each official website for current details.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
